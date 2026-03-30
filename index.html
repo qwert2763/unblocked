@@ -1,0 +1,16 @@
+<head>
+  <title>qwert's unblocked games</title>
+  <link href="https://file.garden/Zg3KMPEHMgKOklpB/2025_11_25_0pg_Kleki.ico" rel="icon">
+</head>
+<body>
+<h2>My Files</h2>
+<ul>
+  {% for file in site.static_files %}
+    {% if file.extname == ".html" %}
+      <li><a href="{{ file.path | relative_url }}">{{ file.basename }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+</body>
+
